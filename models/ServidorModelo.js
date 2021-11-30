@@ -13,8 +13,8 @@ class ServidorModelo{
     }
 
     despertarServidor(){
-        this.app.listen(process.env.PUERTO, function(){
-            console.log("Servidor encendido " + process.env.PUERTO)
+        this.app.listen(process.env.PORT, function(){
+            console.log("Servidor encendido " + process.env.PORT)
         })
     }
 
