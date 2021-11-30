@@ -15,7 +15,7 @@ async function agregarReserva(peticion=request, respuesta=response){
     }catch(error){
         respuesta.status(400).json({
             estado:false,
-            mensaje:"Paila"+error
+            mensaje:"Paila "+error
         })
     }
 }
