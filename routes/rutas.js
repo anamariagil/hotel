@@ -10,12 +10,12 @@ const {eliminarHabitacion}=require('../controllers/controladorHabitacion.js');
 const {editarHabitacion}=require('../controllers/controladorHabitacion.js');
 
 rutas.post('/hotel/Reserva', agregarReserva)  
-rutas.get('/hotel/Reserva/id', buscarReserva)  
-rutas.delete('/hotel/Reserva/id', eliminarReserva)    
-rutas.put('/hotel/Reserva/id', editarReserva)
+rutas.get('/hotel/Reserva/:id', buscarReserva)  
+rutas.delete('/hotel/Reserva/:id', eliminarReserva)    
+rutas.put('/hotel/Reserva/:id', editarReserva)
 rutas.post('/hotel/Habitacion', agregarHabitacion)  
-rutas.get('/hotel/Habitacion/id', buscarHabitacion)  
-rutas.delete('/hotel/Habitacion/id', eliminarHabitacion)    
-rutas.put('/hotel/Habitacion/id', editarHabitacion)
+rutas.get('/hotel/Habitacion/:id', buscarHabitacion)  
+rutas.delete('/hotel/Habitacion/:id', eliminarHabitacion)    
+rutas.put('/hotel/Habitacion/:id', editarHabitacion)
 
 module.exports = rutas
