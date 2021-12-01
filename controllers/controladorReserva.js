@@ -31,7 +31,7 @@ async function buscarReserva(peticion=request, respuesta=response){
     }catch(error){
         respuesta.status(400).json({
             estado:false,
-            mensaje:"Paila"+error
+            mensaje:"Paila "+error
         })
     }
 }
@@ -47,7 +47,7 @@ async function eliminarReserva(peticion=request, respuesta=response){
     }catch(error){
         respuesta.status(400).json({
             estado:false,
-            mensaje:"Paila"+error
+            mensaje:"Paila "+error
         })
     }
 }
@@ -64,7 +64,7 @@ async function editarReserva(peticion=request, respuesta=response){
     }catch(error){
         respuesta.status(400).json({
             estado:false,
-            mensaje:"Paila"+error
+            mensaje:"Paila "+error
         })
     }
 }

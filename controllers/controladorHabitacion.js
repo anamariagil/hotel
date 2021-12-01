@@ -31,7 +31,7 @@ async function buscarHabitacion(peticion=request, respuesta=response){
     }catch(error){
         respuesta.status(400).json({
             estado:false,
-            mensaje:"Paila"+error
+            mensaje:"Paila "+error
         })
     }
 }
@@ -47,7 +47,7 @@ async function eliminarHabitacion(peticion=request, respuesta=response){
     }catch(error){
         respuesta.status(400).json({
             estado:false,
-            mensaje:"Paila"+error
+            mensaje:"Paila "+error
         })
     }
 }
@@ -64,7 +64,7 @@ async function editarHabitacion(peticion=request, respuesta=response){
     }catch(error){
         respuesta.status(400).json({
             estado:false,
-            mensaje:"Paila"+error
+            mensaje:"Paila "+error
         })
     }
 }
