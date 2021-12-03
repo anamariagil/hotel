@@ -8,8 +8,8 @@ class ServidorModelo{
     constructor(){
         this.app=express();
         this.despertarBD();
-        this.enrutarPeticiones();
         this.llamarAuxiliares();
+        this.enrutarPeticiones();
     }
 
     despertarServidor(){
