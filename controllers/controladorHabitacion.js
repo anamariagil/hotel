@@ -7,9 +7,9 @@ const {modificarHabitacion} = require('../services/servicioHabitacion.js')
 async function agregarHabitacion(peticion=request, respuesta=response){
     try{
         let datos=peticion.body
-        await insertarHabitacion(datos)
+        //await insertarHabitacion (datos)
         respuesta.status(200).json({
-            estado:true,
+            estado:datos,
             mensaje:"Bien, se agregó"
         })
     }catch(error){
